@@ -1,0 +1,39 @@
+-- CREATE USER 'temp'@'172.25.215.196' IDENTIFIED BY 'abcd1234';
+
+SHOW DATABASES;
+
+-- 3. Practice creating and dropping a test database
+CREATE DATABASE VITCampus1;
+DROP DATABASE VITCampus1;
+
+-- 4. Create your main database and select it for use
+CREATE DATABASE vitcampus;
+USE vitcampus;
+
+-- 5. Create your department tables
+CREATE TABLE CSE (
+    sid INT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+CREATE TABLE Mech (
+    sid INT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+CREATE TABLE EEE (
+    sid INT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+-- 6. Verify the tables were created successfully
+SHOW TABLES;
+
+-- 7. Insert the data into the CSE table
+INSERT INTO CSE VALUES (109, 'Kiran', 99);
+
+-- 8. Select the data to verify it was added correctly
+SELECT * FROM CSE;
